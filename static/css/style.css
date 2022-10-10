@@ -35,10 +35,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     transition: 0.1s linear;
-}
-.header-logo:hover{
-    font-size: 35px;
-    transition: 0.1s linear;
+    color: #e85a4f;
 }
 .navigation{
     width: 40%;
@@ -73,8 +70,6 @@ body{
     place-items: center;
 }
 .header-resume:hover{
-    width: 145px;
-    height: 51px;
     box-shadow: 5px -7px 10px 1px inset #e98074;
 }
 
@@ -150,9 +145,9 @@ html{
 .link-name{
     display: grid;
     place-items: center;
+    margin-left: 10%;
     width: 150px;
     height: 40px;
-    margin-left: 10%;
     border-radius: 25px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -160,9 +155,6 @@ html{
 .git{
     background: #171515;
     color: #fff;
-}
-.hidden{
-    display: none;
 }
 .git:hover{
     background-color: #fff;
@@ -194,7 +186,6 @@ html{
 .link:hover{
     background-color: #fff;
     color: #0072b1;
-    cursor: pointer;
 }
 .linkedin{
     margin-bottom: 30px;
@@ -214,7 +205,6 @@ html{
 .lets-work-together:hover{
     box-shadow: #e85a4f 35px 20px 60px 7px;
     width: 248px;
-    height: 53px;
     transition: 0.1s linear;
 }
 
@@ -318,6 +308,7 @@ html{
     display: grid;
     place-items: center;
     display: none;
+    z-index: 1;
 }
 .modal-wrapper.show{
     display: grid;
@@ -325,9 +316,8 @@ html{
 .modal{
     width: 800px;
     height: 600px;
-    background-color: #061427;
+    background-color: #d8c3a5;
     display: flex;
-    z-index: 100;
 }
 .modal-top{
     height: 100%;
@@ -350,8 +340,8 @@ html{
     border-top: 0px solid#fff;
     border-left: 0px solid#fff;
     border-right: 0px solid#fff;
-    border-bottom: 1px solid #00FFF5;
-    background-color: #061427;
+    border-bottom: 1px solid #e85a4f;
+    background-color: #d8c3a5;
     color: white;
 }
 .modal-right{
@@ -373,26 +363,26 @@ html{
     width: 90%;
     height: 30%;
     border-radius: 20px;
-    border: 1px solid #00FFF5;
+    border: 1px solid #e85a4f;
     padding: 10px;
-    background-color: #061427;
+    background-color: #d8c3a5;
     color: #fff;
 }
 
 .modal-button-submit{
     width: 130px;
     height: 40px;
-    border: 1px solid #00FFF5;
+    border: 1px solid #e85a4f;
     padding: 10px;
     border-radius: 15px;
     color: #e85a4f;
-    background-color: #061427;
+    background-color: #d8c3a5;
     cursor: pointer;
     transition: 0.2s linear;
 }
 
 .modal-button-submit:hover{
-    box-shadow: 5px -10px 10px 1px inset  #0066FF;
+    box-shadow: 5px -10px 10px 1px inset  #e98074;
     transition: 0.2s linear;
 }
 
@@ -405,8 +395,8 @@ html{
     justify-content: space-around;
     align-items: center;
     margin-left: 80%;
-    background-color: #061427;
-    border: 1px solid #061427;
+    background-color: #d8c3a5;
+    border: 1px solid #e85a4f;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -420,7 +410,7 @@ html{
     width: 95%;
     height: 4px;
     border-radius: 30px;
-    background-color: red;
+    background-color:#e85a4f;
 }
 .modal-button-close span:first-child{
     transform: rotate(45deg) translate(6px, 6px);
@@ -469,20 +459,21 @@ html{
     display: grid;
     place-items: center;
     color: #fff;
+    transition: 0.3s ease;
     opacity: 0;
-    transition: 0.5s ease;
 }
 
-.see-full-project:hover{
+.work-box:hover .see-full-project{
     opacity: 1;
-    transition: 0.5s ease;
+    transition: 0.3s linear;
 }
 
-.container h1{
+.main-span{
     display: grid;
     place-items: center;
     margin-bottom: 40px;
     color: #e98074;
+    font-size: 40px;
 }
 
 .show-more{
@@ -508,7 +499,6 @@ html{
 .show-more-div a:hover{
     box-shadow: #eae7dc 35px 20px 60px 7px;
     width: 280px;
-    height: 55px;
     transition: 0.1s linear;
     font-size: 20px;
 }
@@ -947,7 +937,7 @@ html{
     .show-more-div a:hover{
         width: 200px;
     }
-    .container h1{
+    .main-span{
         font-size: 25px;
     }
     .main-contact h2{
@@ -1057,7 +1047,6 @@ html{
     }
     .header-resume:hover{
         width: 100px;
-        height: 37px;
     }
     .main-about-avatar{
         flex-direction: column;
