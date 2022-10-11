@@ -142,6 +142,9 @@ html{
     display: flex;
     align-items: center;
 }
+.linkedin a{
+    text-decoration: none;
+}
 .link-name{
     display: grid;
     place-items: center;
@@ -186,6 +189,7 @@ html{
 .link:hover{
     background-color: #fff;
     color: #0072b1;
+    cursor: pointer;
 }
 .linkedin{
     margin-bottom: 30px;
@@ -994,13 +998,22 @@ html{
 
 
 @media (max-width:428px) {
-    
-    
+    .work-boxes{
+        grid-template-columns: 1fr;
+    }
+    .work-box:nth-child(2){
+        display: none;
+    }
+    .work-box:nth-child(3){
+        display: none;
+    }
+    .work-box:nth-child(4){
+        display: none;
+    }
     .navigation{
         width: 0;
         position: relative;
     }
-
     .nav-ul{
         display: flex;
         flex-direction: column;
@@ -1069,7 +1082,7 @@ html{
         margin-left: 20%;
     }
     .main-p{
-        width: 338px;
+        width: 300px;
     }
 
     .lets-work-together{
@@ -1132,7 +1145,7 @@ html{
         display: none;
     }
     .unilab-intership-box{
-        width: 351px;
+        width: 350px;
         height: 110px;
         font-size: 8px;
     }
@@ -1207,25 +1220,36 @@ html{
     }
     .face{
         font-size: 0px;
+        background-image: url(../images/avatar/Vector.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
     .face:hover{
         background-color: #3b5999;
     }
     .link{
         font-size: 0px;
-        width: 55px;
+        background-image: url(../images/avatar/linkedin\(1\).svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
     .link:hover{
         background-color: #0072b1;
     }
     .inst{
         font-size: 0px;
+        background-image: url(../images/avatar/instagram\(1\).svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
     .inst:hover{
         background-color: #e1306c;
     }
     .git{
         font-size: 0px;
+        background-image: url(../images/avatar/Vector1.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
     .git:hover{
         background-color: #171515;
@@ -1238,6 +1262,28 @@ html{
     }
     .linkedin{
         margin-bottom: 0px;
+    }
+    .resume-recent-work{
+        grid-template-columns: 1fr;
+    }
+    .project{
+        height: 150px;
+    }
+    .main-contact h3{
+        width: 250px;
+    }
+    .mail{
+        display: none;
+    }
+    .contact-box-third-line{
+        flex-direction: column;
+        height: 100%;
+    }
+    .header-logo:hover{
+        font-size: 22px;
+    }
+    .june-present{
+        display: none;
     }
 }
 
